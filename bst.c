@@ -280,26 +280,8 @@ void menu(Tree *tree)
     } while (option != 0);
 }
 
-void preencherArvore(Tree *tree) 
-{
-    insert(tree, 50);
-    insert(tree, 30);
-    insert(tree, 80);
-    insert(tree, 25);
-    insert(tree, 43);
-    insert(tree, 57);
-    insert(tree, 98);
-    insert(tree, 10);
-    insert(tree, 33);
-    insert(tree, 52);
-    insert(tree, 77);
-    insert(tree, 22);
-    insert(tree, 65);
-}
-
 int main()
 {
     Tree *tree = createTree();
-    preencherArvore(tree);
     menu(tree);
 }
